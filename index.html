@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web Demo - Termux</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Web Demo — Termux ➜ GitHub</h1>
+    <p class="desc">Pequeña app: contador con guardado local y export CSV.</p>
+
+    <div class="controls">
+      <button id="dec">-</button>
+      <span id="count">0</span>
+      <button id="inc">+</button>
+    </div>
+
+    <div class="actions">
+      <button id="reset">Reset</button>
+      <button id="export">Export CSV</button>
+    </div>
+
+    <section class="log">
+      <h2>Historial</h2>
+      <ul id="history"></ul>
+    </section>
+
+    <footer>Abre con <code>python3 -m http.server 8000</code> y ve a <em>http://localhost:8000</em></footer>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
